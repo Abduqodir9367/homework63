@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import About1 from "./components/about/About1";
+import Footer from "./components/footer/Footer";
+import Group from "./components/group/Group";
+import Header from "./components/header/Header";
+import Hero from "./components/hero/Hero";
+import New from "./components/new/New";
+import Produce from "./components/produce/Produce";
+import Products from "./components/products/Products";
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      dark: false,
+    };
+  }
+
+  toggleDarkLight = () => {
+    this.setState({
+      dark: !this.state.dark,
+    });
+  };
+
+  render() {
+    const { dark } = this.state;
+    return (
+      <div>
+        <Header className={dark ? "dark" : ""} />
+        <Hero  className={dark ? "dark" : ""}  />
+        <About1  className={dark ? "dark" : ""}  />
+        <Products  className={dark ? "dark" : ""}  />
+        <Produce  className={dark ? "dark" : ""}  />
+        <Group  className={dark ? "dark" : ""}  />
+        <New  className={dark ? "dark" : ""}  />
+        <Footer  className={dark ? "dark" : ""} />
+      </div>
+    );
+  }
 }
 
 export default App;

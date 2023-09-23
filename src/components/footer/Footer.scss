@@ -1,0 +1,71 @@
+.Footer {
+    height: 400px;
+    background-color: #00103d0f;
+    a{
+        text-decoration: none;
+    }
+  }
+  .f-s {
+    margin: 0px 0px 0px 950px;
+  }
+  .f-p1 {
+    color: var(--color-text, #2c2d2e);
+    font-feature-settings: "clig" off, "liga" off;
+  
+    /* H2 */
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 116.667% */
+  }
+  .f-p2 {
+    color: var(--color-text, #2c2d2e);
+    font-feature-settings: "clig" off, "liga" off;
+  
+    /* H3 */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+  }
+  .f-left {
+    display: flex;
+    gap: 90px;
+  }
+  .f-p3 {
+    color: var(--color-primary, #ef7c00);
+    font-feature-settings: "clig" off, "liga" off;
+  
+    /* H3 */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+  }
+  .f-p4 {
+    color: var(--color-text, #2c2d2e);
+    font-feature-settings: "clig" off, "liga" off;
+  
+    /* H4 */
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 133.333% */
+  }
+  .f-obj {
+    display: flex;
+    gap: 90px;
+  }
+  .f-right {
+    display: flex;
+    gap: 90px;
+  }
+
+  .dark {
+    background-color: #3a3838;
+    color: #fff ;
+  }
